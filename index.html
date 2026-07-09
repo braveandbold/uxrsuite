@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>notō</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
+<script src="config-v2.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="app-nav" class="hidden"></nav>
+<div id="v-login" class="hidden"></div>
+<div id="v-dashboard" class="hidden"></div>
+<div id="v-batteries" class="hidden"></div>
+<div id="v-battery-detail" class="hidden"></div>
+<div id="v-battery-edit" class="hidden"></div>
+<div id="v-session-setup" class="hidden"></div>
+<div id="v-session-test" class="hidden"></div>
+<div id="v-session-report" class="hidden"></div>
+<div id="v-audit" class="hidden"></div>
+<div id="v-audit-detail" class="hidden"></div>
+<div id="v-audit-edit" class="hidden"></div>
+<div id="v-audit-finding" class="hidden"></div>
+
+<div id="confirm-overlay" class="hidden">
+  <div id="confirm-box">
+    <div id="confirm-msg"></div>
+    <div id="confirm-btns">
+      <button id="confirm-cancel">Abbrechen</button>
+      <button id="confirm-discard">Verwerfen</button>
+      <button id="confirm-ok" class="btn-danger">Löschen</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/constants.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/router.js"></script>
+<script src="js/state.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/db.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/batteries.js"></script>
+<script src="js/battery-detail.js"></script>
+<script src="js/battery-edit.js"></script>
+<script src="js/session-setup.js"></script>
+<script src="js/session-test.js"></script>
+<script src="js/session-report.js"></script>
+<script src="js/audit.js"></script>
+<script src="js/audit-edit.js"></script>
+<script src="js/audit-detail.js"></script>
+<script src="js/audit-finding.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
