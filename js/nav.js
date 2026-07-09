@@ -22,7 +22,7 @@ function setNav(crumbs){
   nav.innerHTML=`
     <div class="nav-top">
       <div class="nav-inner">
-        <div class="nav-logo" onclick="runNavAction('renderDashboard()')">notō</div>
+        <div class="nav-logo" onclick="runNavAction('renderDashboard()')">UXRSuite</div>
         ${moduleName?`<span class="nav-module">${esc(moduleName)}</span>`:''}
         <div class="nav-right">
           <span class="nav-email">${esc(currentUser?.email||'')}</span>
